@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0px;
+            pad: 0px;
+
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        header > h1 {
+            margin: 10px;
+            padding: 5px;
+        }
+        nav {
+            background-color: #f0f0f0;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+        }
+        nav > a {
+            background-color: #333;
+            color: white;
+            padding: 3px;
+            margin: 3px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav > a:hover {
+            background-color: #c20505;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+        main {
+            background-color: #928b7de1;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        section {
+            background-color: #c20505;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            
+        }
+        section > h2 {
+            background-color: #c20505;
+            color: white;
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        article > h3 {
+            background-color: #c20505;
+            color: rgb(243, 239, 239);
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+            border-radius: 5px;
+            
+        }
+        article {
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            
+            
+        }
+        article > aside {
+            background-color: #ffffff;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            
+         
+        }
+        #noticias {
+            background-color: #c20505;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            padding: 8px;
+            margin: 15px;
+            
+        }
+        #noticias > article.h2 {
+            background-color: #c20505;
+            border-radius: 5px;
+            color: white;
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .noticias1 {
+            background-color: #c20505;
+            border-radius: 5px;
+            color: white;
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+            text-align: center;
+        }
+        
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>    
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes Politicas e Tecnologias</h2>
+            <article>
+                <h3>Esportes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aliquid ut assumenda autem temporibus dolorem placeat dolore eaque voluptate modi facere! Laboriosam explicabo obcaecati ea est qui totam ex atque!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2 class="noticias1">Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aliquid ut assumenda autem temporibus dolorem placeat dolore eaque voluptate modi facere! Laboriosam explicabo obcaecati ea est qui totam ex atque!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+    <p>Desenvolvido pelo Curso em Video</p>    
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
