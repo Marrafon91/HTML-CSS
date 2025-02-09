@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabela 03</title>
+    <style>
+        caption{
+            background-image: linear-gradient(to left, #d8d3d3, #c97516);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        td {
+         border: 1px solid black;
+         text-align: center;
+         font-weight: bold;
+         
+        }
+        td.f {
+            padding: 5px;
+            width: 20px;
+            background-image: linear-gradient(to left, #575353, #9616c9);
+            color: white;
+            
+        }
+        td.n {
+            background-image: linear-gradient(to left, #575353, #bb18ad);
+            color: white;
+        }
+        td.n1 {
+            background-image: linear-gradient(to left, #575353, #3716c9);
+            color: white;
+        }
+        th.t {
+           background-image: linear-gradient(to left, #d8d3d3, #c91616);
+            color: rgb(255, 255, 255);
+        }
+
+        th {
+            border: 1px solid black;
+            font-weight: bolder;
+            padding: 15px;
+        }
+
+        th.gp {
+            width: 100px;
+            background-image: linear-gradient(to left, #d8d3d3, #c91616);
+            color: white;
+        }
+        th.gp1 {
+            width: 200px;
+            background-image: linear-gradient(to left, #d8d3d3, #c91616);
+            color: white;
+        }
+
+        th.gp2 {
+            width: 300px;
+            background-image: linear-gradient(to left, #d8d3d3, #c91616);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+             <th class="gp" scope="col">Grupo</th>
+             <th class="gp1" scope="col">Nomes</th>
+             <th class="gp2" colspan="3" scope="colgroup">Filmes</th>
+             </tr>
+        </thead>
+         <tbody>
+             <tr>
+                 <th rowspan="4" class="t" scope="rowgroup">Mulheres</th>
+                 <tr>
+                     <td class="n">Ana Maria Santos</td>
+                     <td class="f">Allen</td>
+                     <td class="f">Rambo</td>
+                     <td class="f">Vingadores</td>
+                 </tr>
+                 <tr>
+                     <td class="n">Beatriz Souza</td>
+                     <td class="f">Hulk</td>
+                     <td class="f">Inception</td>
+                     <td class="f">Batman</td>
+                 </tr>
+                 <tr>
+                     <td class="n">Cláudia Melo</td>
+                     <td class="f">Oblivion</td>
+                     <td class="f">Matrix</td>
+                     <td class="f">Big Hero</td>
+                 </tr>
+             </tr>
+             <tr>
+                 <th rowspan="4" class="t" scope="rowgroup">Homens</th>
+                 <tr>
+                    <td class="n1">Bruno Mendonça</td>
+                    <td class="f">Intocaveis</td>
+                    <td class="f">Amnésia</td>
+                    <td class="f">Gladiador</td>
+                 </tr>
+                 <tr>
+                    <td class="n1">Daniel Lourenço</td>
+                    <td class="f">Wall-E</td>
+                    <td class="f">Oldboy</td>
+                    <td class="f">Dangal</td>
+                 </tr>
+                 <tr>
+                     <td class="n1">Fabiano Mota</td>
+                     <td class="f">Star Wars 5</td>
+                     <td class="f">Taxi Driver</td>
+                     <td class="f">Toy Story</td>
+                 </tr>
+             </tr>
+         </tbody>
+    </table>
+    
+</body>
+</html>
