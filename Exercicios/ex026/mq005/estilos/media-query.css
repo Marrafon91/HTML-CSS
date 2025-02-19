@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Estilos para a página de media query 
+
+ Todas as de mais midias 
+
+ Typical device Breakpoints 
+ ------------------------------
+ Pequenas telas até 600px
+ Celular: de 600px até 768px
+ Tablet: de 768px até 992px
+ Desktop: de 1024px até 1200px
+ Grandes Telas: acima de 1200px
+*/
+@media screen and (min-width: 768px) {
+  span#burger {
+    display: none;
+  }
+  menu {
+    display: block;
+    background-color: gray;
+  }
+  menu > ul > li {
+    display: inline-block;
+  }
+  main {
+    width: 768px;
+    
+  }
+    
+}
