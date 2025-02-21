@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            display: flex;
+            background-color: lightsalmon;
+            flex-direction: row;
+            
+                       
+            /*Container sempre tem que ter display flex*/
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+            
+            
+            
+            /*flex: auto; sempre na div filho */
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex-direction row = horizontal ou linha ou da esquerda para a direita -->
+     
+    <!-- Flex-direction row-reverse; da direita para a esquerda -->
+
+    <!-- Flex-direction column = vertical ou coluna ou da cima para baixo -->
+
+    <!-- Flex-direction column-reverse; de baixo para cima -->
+
+    <!--(Eixos) main-axis = horizontal-->
+
+    <!--(Eixos) cross-axis = vertical-->
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <!-- Container é o pai e os itens são os filhos -->
+    <!-- flex: auto; faz com que os itens se ajustem ao tamanho do container -->
+</body>
+</html>
