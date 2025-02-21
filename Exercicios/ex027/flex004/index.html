@@ -6,15 +6,24 @@
     <title>Flexible Box</title>
     <style>
         div.container {
+            background-image:linear-gradient(to bottom, #e41313, #1f1919);
             display: flex;
-            background-color: lightsalmon;
+            height: 300px;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-around;
+            
+            /*justify-items: sempre no eixo principal*/ 
+            /*align-content: sempre no eixo secundário ou eixo trasversal*/
             /*Container sempre tem que ter display flex*/
         }
 
         div.item {
-            background-color: lightskyblue;
-            border: 1px solid #000;
-            flex: auto;
+            background-color: rgb(9, 148, 235);
+            color: #fff;
+            font-size: 2em;
+            padding: 10px;
+            border: 1px solid #fff;
             text-align: center;
             /*flex: auto; sempre na div filho */
             
