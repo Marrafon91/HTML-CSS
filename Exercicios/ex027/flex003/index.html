@@ -6,16 +6,31 @@
     <title>Flexible Box</title>
     <style>
         div.container {
-            display: flex;
             background-color: lightsalmon;
+            display: flex;
+            flex-flow: wrap nowrap;
+
+            /*flex-direction: row;
+            flex-wrap: nowrap;*/
+
+            /*Flex-wrap: wrap; faz com que os itens quebrem a linha quando não couberem mais no container*/
+            /*Flex-wrap: nowrap; faz com que os itens não quebrem a linha e fiquem um do lado do outro*/
+            /*Flex-wrap: wrap-reverse; faz com que os itens quebrem a linha de baixo para cima*/
             /*Container sempre tem que ter display flex*/
+            /*Flex-flow é a junção do flex-direction e flex-wrap*/
+            /*justify-content: flex-start; alinha os itens no inicio do container*/
+            /*justify-content: flex-end; alinha os itens no final do container*/
+            /*justify-content: center; alinha os itens no centro do container*/
+            /*justify-content: space-between; alinha os itens com espaçamento entre eles*/
+            /*justify-content: space-around; alinha os itens com espaçamento em volta deles*/
+            /*justify-content: space-evenly; alinha os itens com espaçamento igual entre eles*/
         }
 
         div.item {
             background-color: lightskyblue;
             border: 1px solid #000;
-            flex: auto;
             text-align: center;
+            flex: auto;
             /*flex: auto; sempre na div filho */
             
         }
@@ -35,13 +50,13 @@
     <!--(Eixos) cross-axis = vertical-->
 
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
     </div>
     <!-- Container é o pai e os itens são os filhos -->
     <!-- flex: auto; faz com que os itens se ajustem ao tamanho do container -->
