@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            /*Container sempre tem que ter display flex*/
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid #000;
+            text-align: center;
+            
+            
+            /*flex: auto; sempre na div filho */
+            
+        }
+        div#cxA {
+         /* flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px; */
+
+            flex: 1 0 200px;
+        }
+        div#cxB {
+         /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 150px; */
+
+            flex: 1 1 150px;
+        }
+        div#cxC {
+         /* flex-grow: 1;
+            flex-shrink: 8;
+            flex-basis: auto; */
+            /* flex: 0 1 auto; = flex: initial; */
+            /* flex: 0 0 auto; = flex: none; */
+            /* flex: 1 1 auto; = flex: auto; */
+
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex-direction row = horizontal ou linha ou da esquerda para a direita -->
+     
+    <!-- Flex-direction row-reverse; da direita para a esquerda -->
+
+    <!-- Flex-direction column = vertical ou coluna ou da cima para baixo -->
+
+    <!-- Flex-direction column-reverse; de baixo para cima -->
+
+    <!--(Eixos) main-axis = horizontal-->
+
+    <!--(Eixos) cross-axis = vertical-->
+
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>    <!-- Cntainer é o pai e os itens são os filhos -->
+    <!-- flex: auto; faz com que os itens se ajustem ao tamanho do container -->
+</body>
+</html>
