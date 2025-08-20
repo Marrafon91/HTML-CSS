@@ -11,7 +11,7 @@ Repositório com exercícios práticos dos **cinco primeiros módulos** do curso
 - **.gitattributes** – Arquivo de configuração para Git.
 - **LICENSE** – Licença MIT para uso, modificação e distribuição.
 - **README.md** – Este arquivo, apresentando o conteúdo e instruções.
-- Linguagens utilizadas: **HTML (~90 %)** e **CSS (~10 %)** :contentReference[oaicite:0]{index=0}
+- Linguagens utilizadas: **HTML (~90 %)** e **CSS (~10 %)**
 
 ---
 
